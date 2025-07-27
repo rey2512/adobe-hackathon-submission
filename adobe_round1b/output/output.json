@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "input_documents": [
+      "annual-report-2023-2024.pdf"
+    ],
+    "persona": "Investment Analyst",
+    "job_to_be_done": "Analyze revenue trends, R&D investments, and market positioning strategies from annual reports.",
+    "processing_timestamp": "2025-07-27 17:53:21"
+  },
+  "extracted_section": [
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 16,
+      "section_title": "Financial   Capital",
+      "importance_rank": 1
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 18,
+      "section_title": "APAC",
+      "importance_rank": 2
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 22,
+      "section_title": "Social  Capital",
+      "importance_rank": 3
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 1,
+      "section_title": "Integrated Annual Report | 2023-2024",
+      "importance_rank": 4
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 5,
+      "section_title": "Business Heads",
+      "importance_rank": 5
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 15,
+      "section_title": "Value",
+      "importance_rank": 6
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 55,
+      "section_title": "Directors\u2019  Report",
+      "importance_rank": 7
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 1,
+      "section_title": "Integrated Annual Report",
+      "importance_rank": 8
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 15,
+      "section_title": "Operations",
+      "importance_rank": 9
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "page_number": 20,
+      "section_title": "Intellectual  Capital",
+      "importance_rank": 10
+    }
+  ],
+  "sub-section_analysis": [
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "Financial Capital TCS\u2019 longevity is a testimony to the strength of our business model and our ability to reinvent ourselves in an ever-evolving technology  landscape to stay relevant to our customers while remaining focused on creating value for all our stakeholders. Outcomes  \u2022\t Best in class pro\ufb01tability and strong  balance sheet provide greater ability  to invest in newer capabilities and to  weather economic downturns \u2022\t Superior Return  Ratios \u2022\t Sustained long term  cashflow \u2022\t Consistentl...",
+      "page_number": 16
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "1GRI 401-1, GRI 405-1 Male Female 40-50 yrs >50 yrs 30-40 yrs <30 yrs Europe 6.2% 9.7% 12.6% 18.9% 8.1% 18.7% 5.6% 20.2% 40-50 yrs >50 yrs 30-40 yrs <30 yrs 10.3% 21.2% 12.2% 26.3% 6.0% 15.5% 2.1% 6.4% Emerging Markets  APAC 40-50 yrs >50 yrs 30-40 yrs <30 yrs 12.6% 12.6% 17.8% 21.7% 9.3% 17.8% 1.8% 6.4% Integrated Annual Report 2023-24 TCS is invested in its people for the long term,  supporting them to build  meaningful careers they  aspire to,  supporting the development of its people,  provi...",
+      "page_number": 18
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "Investors TCS is seen as a benchmark in its outreach to investors, its  transparency and disclosures, and communication of its  longer- term strategy. For the last many years, its Investor  Relations program has been winning awards based on surveys of  investors and analysts across Asia.  Industry Analysts TCS has a robust engagement program with research firms and  industry analysts. Briefing industry analysts and participating  in competitive assessments ensures visibility with prospective  cl...",
+      "page_number": 22
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "20 years of value creation  (2004 - 2024)2     T R A N S F O R M I N G  I N D U S T R I E S         Integrated Annual Report | 2023-2024 20 years of creating value for you Since our IPO in 20042     T R A N S F O R M I N G  I N D U S T R I E S         Backdrop: TCS Gitanjali Park Campus, Kolkata, India...",
+      "page_number": 1
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "Industries Anupam Singhal Manufacturing V Rajanna Technology, Software and Services Akhilesh Tiwari Communications, Media and Information Services Business Heads Suresh Muthuswami Chairman \u2013 TCS North America Markets Amit Bajaj North America Amit Kapur UK & Ireland Sapthagiri Chapalapalli Europe Girish Ramachandran Growth Markets Siva Ganesan  AI.Cloud Ashok Pai Enterprise Cognitive Business Operations Services Vikram Karakoti Enterprise Solutions Regu Ayyaswamy IOT & Digital Engineering Ganesa ...",
+      "page_number": 5
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "CUSTOMER ENGAGEMENT Value Integrated Annual Report 2023-24 Financial Capital    16...",
+      "page_number": 15
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "Integrated Annual Report 2023-24 Directors\u2019 Report To the Members, The Directors present this Integrated Annual Report of  Tata\u00a0Consultancy Services Limited (\u201cthe Company\u201d or \u201cTCS\u201d)  along with the audited financial statements for the financial year  ended March 31, 2024.  The consolidated performance of the Company and its  subsidiaries has been referred to wherever required.  1.\t Financial results (` crore) Standalone Consolidated Financial Year  2023-24  (FY 2024) Financial Year  2022-23  (FY...",
+      "page_number": 55
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "Integrated Annual Report  2023-2024 Tata Consultancy Services is an IT services, consulting and  business solutions organization that has been partnering with  many of the world\u2019s largest businesses in their transformation  journeys for over 56 years. Its consulting-led, cognitive powered,  portfolio of business, technology and engineering services and  solutions is delivered through its unique Location Independent  Agile\u2122 delivery model, recognized as a benchmark of excellence  in software deve...",
+      "page_number": 1
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "Sales, Project Management,   Delivery, Quality Management Talent Acquisition Talent Engagement Talent Development Research & Innovation Products & Platforms Services & Solutions Operations Partners  Technology and  Co-Innovation Network (COIN) Contextual Knowledge Customer Goodwill/Brand Value/CSR/Taxes Stakeholder Payout, Reserves...",
+      "page_number": 15
+    },
+    {
+      "document": "annual-report-2023-2024.pdf",
+      "refined_text": "Focus Areas of TCS\u2019 R&I:  Intellectual Capital...",
+      "page_number": 20
+    }
+  ]
+}
