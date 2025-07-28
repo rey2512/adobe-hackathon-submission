@@ -1,11 +1,12 @@
 {
   "metadata": {
     "input_documents": [
+      "sample.pdf",
       "annual-report-2023-2024.pdf"
     ],
     "persona": "Investment Analyst",
     "job_to_be_done": "Analyze revenue trends, R&D investments, and market positioning strategies from annual reports.",
-    "processing_timestamp": "2025-07-27 17:53:21"
+    "processing_timestamp": "2025-07-28 07:34:46"
   },
   "extracted_section": [
     {
@@ -15,65 +16,70 @@
       "importance_rank": 1
     },
     {
+      "document": "sample.pdf",
+      "page_number": 1,
+      "section_title": "Annual Report",
+      "importance_rank": 2
+    },
+    {
       "document": "annual-report-2023-2024.pdf",
       "page_number": 18,
-      "section_title": "APAC",
-      "importance_rank": 2
+      "section_title": "Emerging Markets",
+      "importance_rank": 3
     },
     {
       "document": "annual-report-2023-2024.pdf",
       "page_number": 22,
       "section_title": "Social  Capital",
-      "importance_rank": 3
+      "importance_rank": 4
     },
     {
       "document": "annual-report-2023-2024.pdf",
       "page_number": 1,
       "section_title": "Integrated Annual Report | 2023-2024",
-      "importance_rank": 4
+      "importance_rank": 5
     },
     {
       "document": "annual-report-2023-2024.pdf",
       "page_number": 5,
       "section_title": "Business Heads",
-      "importance_rank": 5
+      "importance_rank": 6
     },
     {
       "document": "annual-report-2023-2024.pdf",
       "page_number": 15,
       "section_title": "Value",
-      "importance_rank": 6
+      "importance_rank": 7
+    },
+    {
+      "document": "sample.pdf",
+      "page_number": 48,
+      "section_title": "Balance Sheet",
+      "importance_rank": 8
     },
     {
       "document": "annual-report-2023-2024.pdf",
       "page_number": 55,
-      "section_title": "Directors\u2019  Report",
-      "importance_rank": 7
+      "section_title": "Directors’  Report",
+      "importance_rank": 9
     },
     {
       "document": "annual-report-2023-2024.pdf",
       "page_number": 1,
       "section_title": "Integrated Annual Report",
-      "importance_rank": 8
-    },
-    {
-      "document": "annual-report-2023-2024.pdf",
-      "page_number": 15,
-      "section_title": "Operations",
-      "importance_rank": 9
-    },
-    {
-      "document": "annual-report-2023-2024.pdf",
-      "page_number": 20,
-      "section_title": "Intellectual  Capital",
       "importance_rank": 10
     }
   ],
   "sub-section_analysis": [
     {
       "document": "annual-report-2023-2024.pdf",
-      "refined_text": "Financial Capital TCS\u2019 longevity is a testimony to the strength of our business model and our ability to reinvent ourselves in an ever-evolving technology  landscape to stay relevant to our customers while remaining focused on creating value for all our stakeholders. Outcomes  \u2022\t Best in class pro\ufb01tability and strong  balance sheet provide greater ability  to invest in newer capabilities and to  weather economic downturns \u2022\t Superior Return  Ratios \u2022\t Sustained long term  cashflow \u2022\t Consistentl...",
+      "refined_text": "Financial Capital TCS’ longevity is a testimony to the strength of our business model and our ability to reinvent ourselves in an ever-evolving technology  landscape to stay relevant to our customers while remaining focused on creating value for all our stakeholders. Outcomes  •\t Best in class proﬁtability and strong  balance sheet provide greater ability  to invest in newer capabilities and to  weather economic downturns •\t Superior Return  Ratios •\t Sustained long term  cashflow •\t Consistentl...",
       "page_number": 16
+    },
+    {
+      "document": "sample.pdf",
+      "refined_text": "Annual Report  Annual Report  Annual Report  2023-24 2023-24 2023-24 Government of India Ministry of Corporate Affairs ANNUAL REPORT 2023-24...",
+      "page_number": 1
     },
     {
       "document": "annual-report-2023-2024.pdf",
@@ -92,7 +98,7 @@
     },
     {
       "document": "annual-report-2023-2024.pdf",
-      "refined_text": "Industries Anupam Singhal Manufacturing V Rajanna Technology, Software and Services Akhilesh Tiwari Communications, Media and Information Services Business Heads Suresh Muthuswami Chairman \u2013 TCS North America Markets Amit Bajaj North America Amit Kapur UK & Ireland Sapthagiri Chapalapalli Europe Girish Ramachandran Growth Markets Siva Ganesan  AI.Cloud Ashok Pai Enterprise Cognitive Business Operations Services Vikram Karakoti Enterprise Solutions Regu Ayyaswamy IOT & Digital Engineering Ganesa ...",
+      "refined_text": "Industries Anupam Singhal Manufacturing V Rajanna Technology, Software and Services Akhilesh Tiwari Communications, Media and Information Services Business Heads Suresh Muthuswami Chairman – TCS North America Markets Amit Bajaj North America Amit Kapur UK & Ireland Sapthagiri Chapalapalli Europe Girish Ramachandran Growth Markets Siva Ganesan  AI.Cloud Ashok Pai Enterprise Cognitive Business Operations Services Vikram Karakoti Enterprise Solutions Regu Ayyaswamy IOT & Digital Engineering Ganesa ...",
       "page_number": 5
     },
     {
@@ -101,24 +107,19 @@
       "page_number": 15
     },
     {
+      "document": "sample.pdf",
+      "refined_text": "43 Balance Sheet   60 days  Instantaneous   Change in Directors   60 days  Instantaneous   Change in Regd. Ofﬁce Address   60 days  1-3 days   Increase in Authorized Capital   60 days  Instantaneous   Inspection of Public Documents   Physical appearance  Online     44 Corporate Data Management (CDM) 7.4.1 CDM is a Central Sector Scheme  initiated by the Ministry in the nancial year  2015-16. It envisages to create an in-house  data mining and analytics facility with the  objective of disseminat...",
+      "page_number": 48
+    },
+    {
       "document": "annual-report-2023-2024.pdf",
-      "refined_text": "Integrated Annual Report 2023-24 Directors\u2019 Report To the Members, The Directors present this Integrated Annual Report of  Tata\u00a0Consultancy Services Limited (\u201cthe Company\u201d or \u201cTCS\u201d)  along with the audited financial statements for the financial year  ended March 31, 2024.  The consolidated performance of the Company and its  subsidiaries has been referred to wherever required.  1.\t Financial results (` crore) Standalone Consolidated Financial Year  2023-24  (FY 2024) Financial Year  2022-23  (FY...",
+      "refined_text": "Integrated Annual Report 2023-24 Directors’ Report To the Members, The Directors present this Integrated Annual Report of  Tata Consultancy Services Limited (“the Company” or “TCS”)  along with the audited financial statements for the financial year  ended March 31, 2024.  The consolidated performance of the Company and its  subsidiaries has been referred to wherever required.  1.\t Financial results (` crore) Standalone Consolidated Financial Year  2023-24  (FY 2024) Financial Year  2022-23  (FY...",
       "page_number": 55
     },
     {
       "document": "annual-report-2023-2024.pdf",
-      "refined_text": "Integrated Annual Report  2023-2024 Tata Consultancy Services is an IT services, consulting and  business solutions organization that has been partnering with  many of the world\u2019s largest businesses in their transformation  journeys for over 56 years. Its consulting-led, cognitive powered,  portfolio of business, technology and engineering services and  solutions is delivered through its unique Location Independent  Agile\u2122 delivery model, recognized as a benchmark of excellence  in software deve...",
+      "refined_text": "Integrated Annual Report  2023-2024 Tata Consultancy Services is an IT services, consulting and  business solutions organization that has been partnering with  many of the world’s largest businesses in their transformation  journeys for over 56 years. Its consulting-led, cognitive powered,  portfolio of business, technology and engineering services and  solutions is delivered through its unique Location Independent  Agile™ delivery model, recognized as a benchmark of excellence  in software deve...",
       "page_number": 1
-    },
-    {
-      "document": "annual-report-2023-2024.pdf",
-      "refined_text": "Sales, Project Management,   Delivery, Quality Management Talent Acquisition Talent Engagement Talent Development Research & Innovation Products & Platforms Services & Solutions Operations Partners  Technology and  Co-Innovation Network (COIN) Contextual Knowledge Customer Goodwill/Brand Value/CSR/Taxes Stakeholder Payout, Reserves...",
-      "page_number": 15
-    },
-    {
-      "document": "annual-report-2023-2024.pdf",
-      "refined_text": "Focus Areas of TCS\u2019 R&I:  Intellectual Capital...",
-      "page_number": 20
     }
   ]
 }

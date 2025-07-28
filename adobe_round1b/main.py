@@ -3,10 +3,10 @@ import json
 import time
 import statistics
 from pathlib import Path
-import fitz 
+import fitz  # PyMuPDF
 from sentence_transformers import SentenceTransformer, util
 
-
+# --- OPTIMIZATION: Set a limit on pages to process for large documents ---
 MAX_PAGES_TO_PROCESS = 75
 
 def extract_text_from_pdf(pdf_path):
@@ -22,30 +22,34 @@ def extract_text_from_pdf(pdf_path):
     if len(doc) > MAX_PAGES_TO_PROCESS:
         print(f" - INFO: Document has {len(doc)} pages. Processing the first {MAX_PAGES_TO_PROCESS} pages to stay within time limits.")
 
+    # --- Pass 1: Identify potential headings with the most advanced logic ---
     headings = []
     all_font_sizes = []
     
     for page_num in range(page_count_to_process):
         page = doc[page_num]
-        blocks = page.get_text("dict")["blocks"]
+        blocks = page.get_text("dict").get("blocks", [])
         for b in blocks:
             if "lines" in b:
                 for l in b["lines"]:
                     for s in l["spans"]:
-                        all_font_sizes.append(s["size"])
+                        if s["text"].strip():
+                            all_font_sizes.append(s["size"])
 
     if not all_font_sizes:
         return []
 
     median_size = statistics.median(all_font_sizes)
     
+    allowed_single_words = {"content", "contents", "notice", "introduction", "summary", "conclusion", "appendix", "glossary", "financials", "operations", "value"}
+
     for page_num in range(page_count_to_process):
         page = doc[page_num]
-        blocks = page.get_text("dict")["blocks"]
+        blocks = page.get_text("dict").get("blocks", [])
         for b in blocks:
             if "lines" in b:
                 for l in b["lines"]:
-                    if l["spans"]:
+                    if l.get("spans"):
                         span = l["spans"][0]
                         font_size = span["size"]
                         text = " ".join(s["text"] for s in l["spans"]).strip()
@@ -57,8 +61,9 @@ def extract_text_from_pdf(pdf_path):
                         is_title_case = text.istitle() or text.isupper()
                         word_count = len(text.split())
                         is_concise = word_count < 10
+                        is_valid_single_word = word_count > 1 or (word_count == 1 and text.lower() in allowed_single_words)
 
-                        if is_large_enough and is_not_just_number and is_long_enough and is_not_a_sentence and is_title_case and is_concise:
+                        if is_large_enough and is_not_just_number and is_long_enough and is_not_a_sentence and is_title_case and is_concise and is_valid_single_word:
                             headings.append({
                                 "text": text,
                                 "page": page_num,
@@ -141,7 +146,7 @@ def run_analysis():
     print(f"   > Model loaded in {time.time() - t0:.2f}s")
 
     print("Step 2: Loading persona...")
-    with open(input_dir / 'persona.json', 'r') as f:
+    with open(input_dir / 'persona.json', 'r', encoding='utf-8') as f:
         persona_data = json.load(f)
     persona = persona_data['persona']
     job_to_be_done = persona_data['job_to_be_done']
@@ -149,7 +154,18 @@ def run_analysis():
     print("Step 3: Processing all PDF documents...")
     t0 = time.time()
     all_sections = []
-    pdf_files = list(input_dir.glob('*.pdf'))
+    
+    # --- FIX: Use a more robust method to find all PDF files ---
+    try:
+        pdf_files = [input_dir / f for f in os.listdir(input_dir) if f.lower().endswith('.pdf')]
+        print(f"   > DEBUG: Found {len(pdf_files)} PDF files: {[p.name for p in pdf_files]}")
+    except Exception as e:
+        print(f"   > ERROR: Could not list files in {input_dir}. Reason: {e}")
+        pdf_files = []
+
+    if not pdf_files:
+        print("   > WARNING: No PDF files found to process.")
+
     for pdf_file in pdf_files:
         print(f"- Extracting sections from {pdf_file.name}")
         all_sections.extend(extract_text_from_pdf(pdf_file))
@@ -198,8 +214,8 @@ def run_analysis():
         })
 
     output_path = output_dir / 'output.json'
-    with open(output_path, 'w') as f:
-        json.dump(final_output, f, indent=2)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(final_output, f, indent=2, ensure_ascii=False)
 
     print(f"\nSuccess! Total analysis time: {time.time() - total_start_time:.2f}s")
     print(f"Output saved to {output_path}")
